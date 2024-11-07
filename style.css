@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+  background-color: #252323;
+  font-family: "Poppins", sans-serif;
+}
+h1{
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+}
+
+.titulo{
+  border: 20px solid #4D6D63;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.leyenda{
+  text-transform: uppercase;
+  font-family: "Dongle", sans-serif;
+  font-size: 30px;
+  padding: 2px;
+}
+.letra-grande{
+  font-size: 1.4em;
+}
+
+p{
+  margin-bottom: 40px;
+  margin-left: 8.5%;
+}
+
+fieldset{
+  width: 80%;
+  background-color: #a9c0b8;
+  border: 2px solid #2B3D37;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+legend{
+  background-color: #2B3D37;
+  color: white;
+  padding: 1.5%;
+  border-radius: 5px;
+}
+div{
+  margin: 3px 0 3px 0;
+}
+
+label{
+  display: block;
+}
+
+input, select, textarea{
+  border: 1px solid #4D6D63;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+textarea{
+  resize: vertical;
+  height: 100px;
+  min-height: 100px; 
+}
+
+button{
+  background-color: #4d6d63;
+  color: white;
+  padding: 20px;
+  border-color: #a9c0b8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+hr {
+  border: none;
+  width: 25%;
+  border-top: 18px dotted #a9c0b8;
+  margin-bottom: 10px;
+}
+
+/* clases */
+.datos{
+  text-align: center;
+}
+
+.checkbox input, .checkbox label{
+  display: inline-block;
+}
+
+.ancho{
+  width: 70%;
+  padding: 1%;
+}
+
+.sede{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.p-en-fieldset{
+  margin-left: auto;
+}
+.color-p{
+  color: white;
+}
+.terminos{
+  color: white;
+  margin-left: 8.5%;
+}
+
+
+.texto-derecha{
+  text-align: right;
+}
+
+/* focus */
+input:focus, textarea:focus{
+  background-color: #2d6a4f;
+  color: white;
+}
+input:focus::placeholder{
+  color: white;
+}
+
+fieldset:focus-within{
+  background-color: #84a59d;
+}
+fieldset:focus-within legend{
+  background-color: #1b4332;
+}
+
+/* hover */
+button:hover{
+  color: #2d6a4f;
+  background-color: #a9c0b8;
+  border-color: #2d6a4f;
+}

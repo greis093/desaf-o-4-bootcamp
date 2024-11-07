@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--IMPORTAR GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dongle&family=Racing+Sans+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <title>Desafio 4</title>
+  </head>
+  <body>
+
+    <h1 class="titulo"> Vení al Gym! 💪</h1>
+    
+
+    <div>
+      <form action="https://postman-echo.com/post" method="POST">
+      
+        <!--Datos personale-->
+        <fieldset>
+            <legend class="leyenda"> 🙋‍♂️<text class="letra-grande">D</text>atos <text class="letra-grande">P</text>ersonales👀</legend>
+          
+          <div class="datos"> 
+            <label>Nombre:*</label>
+            <input class="ancho texto-derecha" type="text" name="nombre" required>
+          </div> 
+        
+          <div class="datos"> 
+            <label>Apellido:*</label>
+            <input class="ancho texto-derecha" type="text" name="apellido" required>
+          </div>
+          
+          <div class="datos"> 
+            <label>Documento:*</label>
+            <input class="ancho texto-derecha" type="text" pattern="[0-9]+" title="solo números" name="dni" required>
+          </div>
+          
+          <div class="datos"> 
+            <label>Nacionalidad:*</label>
+            <select class="ancho" name="nacionalidad" required>
+              <option value="">- Seleccionar -</option>
+              <option value="argentina">Argentina</option>
+              <option value="brasileña">Brasileña</option>
+              <option value="uruguaya">Uruguaya</option>
+              <option value="otra">Otra</option>
+            </select>
+          </div> 
+
+          <div class="datos">
+            <label>Contanos un poco de vos...</label>
+            <textarea class="ancho texto-derecha" name="info"></textarea>
+          </div>
+
+          <div class="datos">
+            <label>Sexo:*</label>
+
+            <div class="checkbox">
+              <input id="femenino" type="radio" name="genero" value="femenino">
+              <label for="femenino">Femenino</label>
+              <input id="masculino" type="radio" name="genero" value="masculino">
+              <label for="masculino">Masculino</label>
+              <input id="otro" type="radio" name="genero" value="otro">
+              <label for="otro">Otro</label>
+            </div>
+
+          </div>
+        </fieldset>
+
+        <hr>
+          
+        <!-- DATOS DE CONTACTO -->
+        <fieldset>
+          <legend class="leyenda">📱<text class="letra-grande">D</text>atos de <text class="letra-grande">c</text>ontacto 📩</legend>
+          <div class="datos">
+            <label>Teléfono:</label>
+            <input class="ancho texto-derecha" type="text" pattern="[+0-9]+" name="telefono" placeholder="Código de área y número">
+          </div> 
+
+          <div class="datos">
+            <label>Dirección de correo electrónico:*</label>
+            <input class="ancho texto-derecha" type="email" name="correo" placeholder="Ej: mail@gmail.com" required>
+          </div>
+        </fieldset>
+        
+        <hr>
+        <!-- ACTIVIDADES -->
+        <fieldset>
+          <legend class="leyenda">🚴 <text class="letra-grande">A</text>ctividades 🤸</legend>
+          <p class="p-en-fieldset">Por favor, indicá cuáles son las actividades que te interesan.</p>
+
+          <div>
+            <label>Sede Palermo</label>
+            <div class="checkbox">
+              <input type="checkbox" name="actividad" value="basquet">
+              <label>Básquet</label>
+              <input type="checkbox" name="actividad" value="boxeo">
+              <label>Boxeo</label>
+              <input type="checkbox" name="actividad" value="futbol">
+              <label>Fútbol</label>
+              <input type="checkbox" name="actividad" value="tenis">
+              <label>Tenis</label>
+            </div>
+
+            <label>Sede Rosario</label>
+            <div class="checkbox">
+              <input type="checkbox" name="actividad" value="basquet">
+              <label>Básquet</label>
+              <input type="checkbox" name="actividad" value="futbol">
+              <label>Fútbol</label>
+              <input type="checkbox" name="actividad" value="rugby">
+              <label>Rugby</label>
+              <input type="checkbox" name="actividad" value="voley">
+              <label>Voley</label>
+            </div> <!-- sede rosario -->
+
+          </div> <!-- sedes -->
+
+        </fieldset>
+
+        <!-- TERMINOS Y CONDICIONES -->
+        <div class="terminos checkbox">
+          <input id="lbl-condiciones" type="checkbox" name="terminos" value="condiciones" required>
+          <label for="lbl-condiciones">Acepto las condiciones*</label>
+        </div>
+        
+        <div class="terminos checkbox">
+          <input id="lbl-novedades" type="checkbox" name="terminos" value="novedades">
+          <label for="lbl-novedades">Deseo recibir novedades</label>
+        </div>
+
+        <p class="color-p">*: campo obligatorio.</p>
+
+        <div class="datos">
+          <button type="submit">Iniciar afiliación</button>
+          <button type="reset">Restablecer</button>
+        </div>
+
+      </form>
+    </div> 
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
